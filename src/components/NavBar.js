@@ -1,4 +1,4 @@
-function NavBar() {
+const NavBar = () => {
 	return (
 		<nav>
 			<a href='#home'>Home</a>
