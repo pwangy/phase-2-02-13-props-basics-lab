@@ -1,12 +1,13 @@
-const About = () => {
+import Links from './Links'
+
+const About = ({ bio, github, linkedin }) => {
 	return (
 		<div id='about'>
 			<h2>About Me</h2>
-			<p>Put the bio in here</p>
+			{!bio || bio === '' ? null : <p>{bio}</p>}
 			<img src='https://i.imgur.com/mV8PQxj.gif' alt='I made this' />
-			{/* add your <Links /> component here */}
+			<Links github={github} linkedin={linkedin}></Links>
 		</div>
-	)
-}
+)}
 
 export default About
